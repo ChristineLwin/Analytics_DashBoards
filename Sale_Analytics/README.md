@@ -7,4 +7,4 @@ To serve the dashboard locally, use the command:
 panel serve GlobalSaleDashBoard.ipynb
 ```
 
-![Analytics DashBoard](/SaleDashBoard.png)
+![/SaleDashBoard.png](https://github.com/ChristineLwin/Analytics_DashBoards/blob/main/Sale_Analytics/SaleDashBoard.png)
