@@ -1,6 +1,6 @@
 # Interactive Data Analytics Visualization DashBoard using Panel
 
-This repo contains code for creating interactive data analytics visualization for [Kaggle E-Commerce data](https://www.kaggle.com/code/sercanyesiloz/crm-analytics/data) in 12/2010 and 12/2011.  
+This repo contains code for creating interactive data analytics visualization for [Kaggle E-Commerce data](https://www.kaggle.com/code/sercanyesiloz/crm-analytics/data).  
 
 To serve the dashboard locally, use the command:
 ```
