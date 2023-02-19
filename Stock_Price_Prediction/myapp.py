@@ -20,7 +20,7 @@ def plot_data():
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=data['Date'],y=data['Open'],name="Open"))
     fig.add_trace(go.Scatter(x=data['Date'],y=data['Adj Close'],name="Adj Close"))
-    fig.layout.update(title_text="",xaxis_rangeslider_visible=True)
+    fig.layout.update(title_text="",xaxis_rangeslider_visible=True,width=800)
     return fig
     
 st.set_page_config(
@@ -75,7 +75,7 @@ with placeholder.container():
 
     with fig2_col1:
         st.subheader("Forecast components")
-        fig2 = model.plot_components(forecast,figsize=(10,20))
+        fig2 = model.plot_components(forecast,figsize=(10,16))
         st.write(fig2)
 
     with tbl_col2:
@@ -90,5 +90,5 @@ with placeholder.container():
         st.subheader('Performance Metric - RMSE')
         df_pm = performance_metrics(df_cv)  
 
-        fig3 = plot_cross_validation_metric(df_cv,metric='rmse',figsize=(10,4.5)) 
+        fig3 = plot_cross_validation_metric(df_cv,metric='rmse',figsize=(10,4)) 
         st.write(fig3)
